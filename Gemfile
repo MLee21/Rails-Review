@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'byebug'
@@ -22,6 +23,7 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'better_errors'
+  gem 'shoulda-matchers'
 end
 
 group :production do 
