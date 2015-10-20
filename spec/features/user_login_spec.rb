@@ -35,4 +35,8 @@ feature "a user logs in" do
     expect(current_path).to eq(root_path)
   end
 
+  scenario "is not logged in, visits index, and is redirected back to root" do 
+    visit users_path
+    expect(current_path).to eq(login_path)
+  end
 end

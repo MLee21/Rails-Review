@@ -16,7 +16,7 @@ RSpec.describe User, type: :model do
   it { should validate_length_of(:email) }
 
   it "should have a length validation on name - too long" do 
-    user.name = "a" * 16
+    user.name = "a" * 26
     expect(user).to_not be_valid
   end
 
